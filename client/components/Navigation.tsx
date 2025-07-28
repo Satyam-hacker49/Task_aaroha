@@ -74,7 +74,7 @@ export default function Navigation() {
                 </Link>
               ))}
               <Button className="bg-gradient-to-r from-aaroha-blue to-aaroha-teal hover:from-aaroha-teal hover:to-aaroha-blue text-white w-full mt-4">
-                Join Us
+                <a href="#Formm">Join Us</a>
               </Button>
             </div>
           </div>
