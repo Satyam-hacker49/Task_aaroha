@@ -237,53 +237,80 @@ export default function Index() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-aaroha-navy mb-4">Join Us (Volunteer Page)</h2>
-            <p className="text-xl text-gray-600">A form for students who want to be part of Aaroha</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-aaroha-navy mb-4">Volunteer With Aaroha</h2>
+            <p className="text-xl text-gray-600">Join our mission to empower underprivileged children through education and care</p>
           </div>
-          
+
           <Card className="border-2 border-aaroha-blue/20">
             <CardHeader>
               <CardTitle className="text-2xl text-aaroha-navy">Volunteer Registration</CardTitle>
-              <CardDescription>Fill out this form to become a part of the Aaroha organizing team</CardDescription>
+              <CardDescription>Help us make a difference in children's lives. Fill out this form to become a part of our volunteer community.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
+                  <Label htmlFor="name">Full Name</Label>
                   <Input id="name" placeholder="Enter your full name" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email">Email Address</Label>
                   <Input id="email" type="email" placeholder="your.email@example.com" />
                 </div>
               </div>
-              
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Phone Number</Label>
+                  <Input id="phone" placeholder="+91 XXXXX XXXXX" />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="age">Age</Label>
+                  <Input id="age" type="number" placeholder="Your age" />
+                </div>
+              </div>
+
               <div className="space-y-2">
-                <Label htmlFor="volunteer-reason">Why do you want to volunteer?</Label>
-                <Textarea 
-                  id="volunteer-reason" 
-                  placeholder="Tell us about your motivation to be part of Aaroha..."
+                <Label htmlFor="program-interest">Which program would you like to volunteer for?</Label>
+                <Select>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select a program" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="akshar">Project Akshar (Education)</SelectItem>
+                    <SelectItem value="anand">Project Anand (Fun Learning)</SelectItem>
+                    <SelectItem value="aahar">Project Aahar (Nutrition)</SelectItem>
+                    <SelectItem value="pathshala">Project Pathshala (School Support)</SelectItem>
+                    <SelectItem value="any">Any program</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="volunteer-reason">Why do you want to volunteer with Aaroha?</Label>
+                <Textarea
+                  id="volunteer-reason"
+                  placeholder="Share your motivation and how you'd like to contribute to our mission of empowering children..."
                   className="min-h-[100px]"
                 />
               </div>
-              
+
               <div className="space-y-2">
-                <Label htmlFor="availability">Availability (checkbox or dropdown)</Label>
+                <Label htmlFor="availability">Availability</Label>
                 <Select>
                   <SelectTrigger>
                     <SelectValue placeholder="Select your availability" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="full-time">Full Time (All Days)</SelectItem>
+                    <SelectItem value="weekdays">Weekdays (Mon-Fri)</SelectItem>
                     <SelectItem value="weekends">Weekends Only</SelectItem>
-                    <SelectItem value="specific-days">Specific Days</SelectItem>
                     <SelectItem value="flexible">Flexible Schedule</SelectItem>
+                    <SelectItem value="specific">Specific Days (will discuss)</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
-              
+
               <Button className="w-full bg-gradient-to-r from-aaroha-blue to-aaroha-teal hover:from-aaroha-teal hover:to-aaroha-blue text-white py-3">
-                Submit Application
+                Submit Volunteer Application
               </Button>
             </CardContent>
           </Card>
