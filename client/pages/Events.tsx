@@ -294,10 +294,9 @@ export default function Events() {
               <Calendar className="mr-2 h-5 w-5" />
               Volunteer for Events
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-aaroha-navy px-8 py-4"
+            <Button
+              size="lg"
+              className="bg-aaroha-teal text-white hover:bg-aaroha-teal/90 px-8 py-4"
             >
               <Gift className="mr-2 h-5 w-5" />
               Support Our Cause
