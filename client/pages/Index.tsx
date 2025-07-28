@@ -88,46 +88,64 @@ export default function Index() {
               </div>
             </div>
             
-            <div className="grid grid-cols-2 gap-6">
-              <Card className="border-2 border-aaroha-blue/20 hover:border-aaroha-blue/40 transition-colors">
-                <CardHeader className="pb-3">
-                  <Code className="h-8 w-8 text-aaroha-blue mb-2" />
-                  <CardTitle className="text-lg">Navigation Bar</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-gray-600">Easy access to all sections</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="border-2 border-aaroha-teal/20 hover:border-aaroha-teal/40 transition-colors">
-                <CardHeader className="pb-3">
-                  <Globe className="h-8 w-8 text-aaroha-teal mb-2" />
-                  <CardTitle className="text-lg">Hero Section</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-gray-600">Impactful first impression</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="border-2 border-aaroha-blue/20 hover:border-aaroha-blue/40 transition-colors">
-                <CardHeader className="pb-3">
-                  <Lightbulb className="h-8 w-8 text-aaroha-blue mb-2" />
-                  <CardTitle className="text-lg">Short About</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-gray-600">Clear purpose explanation</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="border-2 border-aaroha-teal/20 hover:border-aaroha-teal/40 transition-colors">
-                <CardHeader className="pb-3">
-                  <Trophy className="h-8 w-8 text-aaroha-teal mb-2" />
-                  <CardTitle className="text-lg">Events</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-gray-600">Showcase all activities</p>
-                </CardContent>
-              </Card>
+            <div className="space-y-6">
+              <div className="prose prose-lg max-w-none text-gray-600">
+                <p className="text-lg leading-relaxed mb-6">
+                  <strong>Aaroha</strong> is a non-governmental organization based in <strong>Bhopal, Madhya Pradesh</strong>,
+                  dedicated to the empowerment and holistic development of underprivileged children through education,
+                  skill development, and community engagement programs.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8 mt-8">
+                  <div>
+                    <h4 className="text-xl font-semibold text-aaroha-navy mb-4 flex items-center">
+                      <Target className="h-6 w-6 text-aaroha-blue mr-2" />
+                      Our Vision
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      To create a society where every child, regardless of their background, has access to quality education
+                      and opportunities for personal growth, enabling them to break the cycle of poverty and contribute
+                      meaningfully to their communities.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-semibold text-aaroha-navy mb-4 flex items-center">
+                      <Heart className="h-6 w-6 text-aaroha-teal mr-2" />
+                      Our Mission
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      To provide comprehensive educational support, skill development programs, and mentorship to
+                      underprivileged children in Bhopal, fostering their academic, personal, and social development
+                      through innovative and sustainable initiatives.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-8">
+                  <h4 className="text-xl font-semibold text-aaroha-navy mb-4 flex items-center">
+                    <Users className="h-6 w-6 text-aaroha-blue mr-2" />
+                    What Makes Us Different
+                  </h4>
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <div className="text-center p-4 bg-aaroha-blue/5 rounded-lg">
+                      <BookOpen className="h-8 w-8 text-aaroha-blue mx-auto mb-2" />
+                      <p className="font-medium text-aaroha-navy">Holistic Education</p>
+                      <p className="text-sm text-gray-600 mt-1">Beyond academics - life skills, creativity, and personal growth</p>
+                    </div>
+                    <div className="text-center p-4 bg-aaroha-teal/5 rounded-lg">
+                      <Lightbulb className="h-8 w-8 text-aaroha-teal mx-auto mb-2" />
+                      <p className="font-medium text-aaroha-navy">Community-Driven</p>
+                      <p className="text-sm text-gray-600 mt-1">Local volunteers and community involvement at the core</p>
+                    </div>
+                    <div className="text-center p-4 bg-aaroha-blue/5 rounded-lg">
+                      <Globe className="h-8 w-8 text-aaroha-blue mx-auto mb-2" />
+                      <p className="font-medium text-aaroha-navy">Sustainable Impact</p>
+                      <p className="text-sm text-gray-600 mt-1">Long-term support and follow-up for lasting change</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
