@@ -317,53 +317,59 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Recruitment Section */}
+      {/* Our Impact Section */}
       <section className="py-20 bg-gradient-to-r from-aaroha-navy to-aaroha-blue text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-6 bg-white/20 text-white px-4 py-2">
-              RECRUITMENT 2025
+              SINCE 2014
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Technical Requirements</h2>
-            <div className="flex items-center justify-center space-x-4 mb-8">
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                <Code className="h-8 w-8" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Impact</h2>
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+              Transforming lives through education, nutrition, and care - see how Aaroha is making a difference
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="h-10 w-10 text-white" />
               </div>
-              <div className="text-2xl font-bold">TASK</div>
+              <h3 className="text-3xl font-bold mb-2">500+</h3>
+              <p className="text-white/80">Children Empowered</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BookOpen className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold mb-2">10+</h3>
+              <p className="text-white/80">Years of Service</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold mb-2">1000+</h3>
+              <p className="text-white/80">Meals Served Daily</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Trophy className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold mb-2">50+</h3>
+              <p className="text-white/80">School Admissions</p>
             </div>
           </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-white/10 border-white/20 text-white">
-              <CardHeader>
-                <CardTitle className="text-white">Must Include:</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <h4 className="font-semibold mb-2">Form Fields:</h4>
-                  <ul className="space-y-1 text-white/80 ml-4">
-                    <li>• Name</li>
-                    <li>• Email</li>
-                    <li>• Why do you want to volunteer?</li>
-                    <li>• Availability (checkbox or dropdown)</li>
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white/10 border-white/20 text-white">
-              <CardHeader>
-                <CardTitle className="text-white">Bonus Points:</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="space-y-2 text-white/80">
-                  <p><strong>1.</strong> Use of CSS Frameworks and Javascript libraries for styling and animations (Tailwind CSS, GSAP, Framer Motion)</p>
-                  <p><strong>2.</strong> Deployment: Use platforms like Vercel, Netlify, or GitHub pages for deployment</p>
-                  <p><strong>3.</strong> Form Validation at backend</p>
-                  <p><strong>4.</strong> Responsiveness (Desktop, tablet, Mobile)</p>
-                </div>
-              </CardContent>
-            </Card>
+
+          <div className="mt-16 text-center">
+            <h3 className="text-2xl font-bold mb-4">Every Child Deserves Education</h3>
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
+              Our mission is to ensure that no child is deprived of education due to lack of resources.
+              Together, we can build a brighter future for every child.
+            </p>
           </div>
         </div>
       </section>
