@@ -131,66 +131,151 @@ export default function Events() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <Badge className="mb-6 bg-gradient-to-r from-aaroha-blue to-aaroha-teal text-white px-4 py-2">
-              PROJECT ANAND INITIATIVES
+              PROJECT AASHA HIGHLIGHTS
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-aaroha-navy mb-6">
-              Our <span className="bg-gradient-to-r from-aaroha-blue to-aaroha-teal bg-clip-text text-transparent">Events</span>
+              Event <span className="bg-gradient-to-r from-aaroha-blue to-aaroha-teal bg-clip-text text-transparent">Highlights</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Transformative experiences designed to empower underprivileged children through education, 
-              creativity, and community engagement under our Project Anand initiative.
+              Showcasing what happens in Aasha - transformative activities that help children explore their talents,
+              build confidence, and create lasting positive change in their lives.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main Events Grid */}
+      {/* Aasha Event Highlights */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-aaroha-navy mb-4">Project Anand Events</h2>
-            <p className="text-xl text-gray-600">Comprehensive programs for holistic child development</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-aaroha-navy mb-4">What Happens in Aasha</h2>
+            <p className="text-xl text-gray-600">Transformative activities that foster talent discovery and personal growth</p>
           </div>
-          
+
           <div className="grid lg:grid-cols-2 gap-8">
-            {events.map((event, index) => {
-              const IconComponent = event.icon;
-              const colorClass = event.color === 'aaroha-blue' ? 'text-aaroha-blue border-aaroha-blue/20 hover:border-aaroha-blue/40' : 'text-aaroha-teal border-aaroha-teal/20 hover:border-aaroha-teal/40';
-              
-              return (
-                <Card key={index} className={`hover:shadow-lg transition-all duration-300 border-2 ${colorClass}`}>
-                  <CardHeader>
-                    <div className="flex items-center space-x-3 mb-2">
-                      <IconComponent className={`h-8 w-8 ${event.color === 'aaroha-blue' ? 'text-aaroha-blue' : 'text-aaroha-teal'}`} />
-                      <CardTitle className="text-xl text-aaroha-navy">{event.title}</CardTitle>
-                    </div>
-                    <CardDescription className="text-base">
-                      {event.description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="font-semibold text-aaroha-navy mb-2">Key Activities:</h4>
-                        <ul className="space-y-1 text-sm text-gray-600">
-                          {event.activities.map((activity, actIndex) => (
-                            <li key={actIndex} className="flex items-start">
-                              <span className="text-green-500 mr-2">•</span>
-                              {activity}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div className={`p-3 rounded-lg ${event.color === 'aaroha-blue' ? 'bg-aaroha-blue/10' : 'bg-aaroha-teal/10'}`}>
-                        <p className="text-sm font-medium text-aaroha-navy">
-                          <strong>Impact:</strong> {event.impact}
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+            <Card className="hover:shadow-lg transition-all duration-300 border-2 border-aaroha-blue/20 hover:border-aaroha-blue/40">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-2">
+                  <Star className="h-8 w-8 text-aaroha-blue" />
+                  <CardTitle className="text-xl text-aaroha-navy">Talent Discovery Workshops</CardTitle>
+                </div>
+                <CardDescription className="text-base">
+                  Interactive sessions helping children identify and explore their unique abilities
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-aaroha-navy mb-2">Activities Include:</h4>
+                    <ul className="space-y-1 text-sm text-gray-600">
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Art and creativity sessions</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Music and dance exploration</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Sports and physical activities</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Storytelling and drama</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Science and innovation projects</li>
+                    </ul>
+                  </div>
+                  <div className="p-3 rounded-lg bg-aaroha-blue/10">
+                    <p className="text-sm font-medium text-aaroha-navy">
+                      <strong>Impact:</strong> Children discover hidden talents and develop new interests beyond traditional academics
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-all duration-300 border-2 border-aaroha-teal/20 hover:border-aaroha-teal/40">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-2">
+                  <Trophy className="h-8 w-8 text-aaroha-teal" />
+                  <CardTitle className="text-xl text-aaroha-navy">Showcase & Performance Events</CardTitle>
+                </div>
+                <CardDescription className="text-base">
+                  Platforms for children to display their talents and build confidence
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-aaroha-navy mb-2">Event Highlights:</h4>
+                    <ul className="space-y-1 text-sm text-gray-600">
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Cultural performances and competitions</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Art exhibitions showcasing children's work</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Talent shows with community audience</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Recognition and award ceremonies</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Peer appreciation and feedback sessions</li>
+                    </ul>
+                  </div>
+                  <div className="p-3 rounded-lg bg-aaroha-teal/10">
+                    <p className="text-sm font-medium text-aaroha-navy">
+                      <strong>Impact:</strong> Builds self-confidence and provides recognition for children's achievements
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-all duration-300 border-2 border-aaroha-blue/20 hover:border-aaroha-blue/40">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-2">
+                  <Heart className="h-8 w-8 text-aaroha-blue" />
+                  <CardTitle className="text-xl text-aaroha-navy">Personal Growth Sessions</CardTitle>
+                </div>
+                <CardDescription className="text-base">
+                  Building emotional intelligence and life skills for holistic development
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-aaroha-navy mb-2">Focus Areas:</h4>
+                    <ul className="space-y-1 text-sm text-gray-600">
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Confidence building exercises</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Communication skills development</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Leadership and teamwork activities</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Goal setting and achievement planning</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Emotional support and counseling</li>
+                    </ul>
+                  </div>
+                  <div className="p-3 rounded-lg bg-aaroha-blue/10">
+                    <p className="text-sm font-medium text-aaroha-navy">
+                      <strong>Impact:</strong> Develops essential life skills and emotional resilience for future success
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-all duration-300 border-2 border-aaroha-teal/20 hover:border-aaroha-teal/40">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-2">
+                  <Users className="h-8 w-8 text-aaroha-teal" />
+                  <CardTitle className="text-xl text-aaroha-navy">Mentorship Programs</CardTitle>
+                </div>
+                <CardDescription className="text-base">
+                  Connecting children with mentors who guide their personal and academic journey
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-aaroha-navy mb-2">Program Features:</h4>
+                    <ul className="space-y-1 text-sm text-gray-600">
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>One-on-one mentoring sessions</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Career guidance and counseling</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Educational pathway planning</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Regular progress monitoring</li>
+                      <li className="flex items-start"><span className="text-green-500 mr-2">•</span>Family engagement and support</li>
+                    </ul>
+                  </div>
+                  <div className="p-3 rounded-lg bg-aaroha-teal/10">
+                    <p className="text-sm font-medium text-aaroha-navy">
+                      <strong>Impact:</strong> Provides guidance and support for long-term personal and academic success
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
