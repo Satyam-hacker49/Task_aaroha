@@ -18,93 +18,6 @@ import {
 } from "lucide-react";
 
 export default function Events() {
-  const events = [
-    {
-      title: "A se Ah",
-      description: "An annual event that recreates the spirit of a school function for underprivileged children",
-      icon: Music,
-      color: "aaroha-blue",
-      activities: [
-        "Morning assemblies with inspiring talks",
-        "Group meals fostering community",
-        "Interactive quizzes and competitions", 
-        "Fun games and recreational activities",
-        "Cultural performances and celebrations"
-      ],
-      impact: "Brings joy and learning together in a celebration of childhood"
-    },
-    {
-      title: "Aakar",
-      description: "Holistic development project organizing diverse weekend activities since 2014",
-      icon: Lightbulb,
-      color: "aaroha-teal", 
-      activities: [
-        "Technical skill development workshops",
-        "Communication skills training",
-        "Creative arts and crafts sessions",
-        "Leadership development activities",
-        "Team building exercises"
-      ],
-      impact: "Equipping children with multidisciplinary skills for their future"
-    },
-    {
-      title: "Aavishkar",
-      description: "Innovation-focused program for holistic child development through creative exploration",
-      icon: Star,
-      color: "aaroha-blue",
-      activities: [
-        "Science and technology exploration",
-        "Creative problem-solving sessions",
-        "Innovation workshops and demos",
-        "Hands-on project development",
-        "Presentation and showcase events"
-      ],
-      impact: "Fostering creativity and innovation in young minds"
-    },
-    {
-      title: "Aasha",
-      description: "A series of events providing opportunities for children to explore and showcase their talents",
-      icon: Heart,
-      color: "aaroha-teal",
-      activities: [
-        "Talent discovery workshops",
-        "Performance and showcase events",
-        "Confidence building activities",
-        "Personal growth sessions",
-        "Mentorship programs"
-      ],
-      impact: "Building confidence and encouraging personal growth"
-    },
-    {
-      title: "Unmilanam",
-      description: "Celebrating the essence of Indian education system with distinguished guests",
-      icon: BookOpen,
-      color: "aaroha-blue",
-      activities: [
-        "Educational heritage discussions",
-        "Guest speaker sessions",
-        "Cultural education workshops",
-        "Traditional learning methods",
-        "Educational system appreciation"
-      ],
-      impact: "Connecting children to their educational heritage and inspiring deeper learning"
-    },
-    {
-      title: "Alankaran",
-      description: "Formal recognition event honoring volunteers and outgoing management team",
-      icon: Award,
-      color: "aaroha-teal",
-      activities: [
-        "Volunteer recognition ceremony",
-        "Achievement awards presentation",
-        "Team appreciation events",
-        "Contribution acknowledgments",
-        "Community celebration"
-      ],
-      impact: "Celebrating dedication and recognizing outstanding contributions"
-    }
-  ];
-
   const fundraisingEvents = [
     {
       title: "Independence Day Fundraiser",
@@ -325,41 +238,41 @@ export default function Events() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-aaroha-navy mb-4">Our Impact</h2>
-            <p className="text-xl text-gray-600">Creating meaningful change through our events</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-aaroha-navy mb-4">Aasha Impact</h2>
+            <p className="text-xl text-gray-600">Creating meaningful change through talent discovery and personal growth</p>
           </div>
           
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-aaroha-blue to-aaroha-teal rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-10 w-10 text-white" />
+                <Star className="h-10 w-10 text-white" />
               </div>
-              <h3 className="text-3xl font-bold text-aaroha-navy mb-2">500+</h3>
-              <p className="text-gray-600">Children Impacted</p>
+              <h3 className="text-3xl font-bold text-aaroha-navy mb-2">200+</h3>
+              <p className="text-gray-600">Talents Discovered</p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-aaroha-blue to-aaroha-teal rounded-full flex items-center justify-center mx-auto mb-4">
-                <Calendar className="h-10 w-10 text-white" />
+                <Trophy className="h-10 w-10 text-white" />
               </div>
-              <h3 className="text-3xl font-bold text-aaroha-navy mb-2">50+</h3>
-              <p className="text-gray-600">Events Organized</p>
+              <h3 className="text-3xl font-bold text-aaroha-navy mb-2">30+</h3>
+              <p className="text-gray-600">Showcase Events</p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-aaroha-blue to-aaroha-teal rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="h-10 w-10 text-white" />
               </div>
-              <h3 className="text-3xl font-bold text-aaroha-navy mb-2">100+</h3>
-              <p className="text-gray-600">Volunteers Engaged</p>
+              <h3 className="text-3xl font-bold text-aaroha-navy mb-2">150+</h3>
+              <p className="text-gray-600">Children Empowered</p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-aaroha-blue to-aaroha-teal rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="h-10 w-10 text-white" />
+                <Users className="h-10 w-10 text-white" />
               </div>
-              <h3 className="text-3xl font-bold text-aaroha-navy mb-2">10+</h3>
-              <p className="text-gray-600">Locations in Bhopal</p>
+              <h3 className="text-3xl font-bold text-aaroha-navy mb-2">50+</h3>
+              <p className="text-gray-600">Dedicated Mentors</p>
             </div>
           </div>
         </div>
@@ -368,10 +281,10 @@ export default function Events() {
       {/* Get Involved Section */}
       <section className="py-20 bg-gradient-to-r from-aaroha-navy to-aaroha-blue text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Events</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Be Part of Aasha</h2>
           <p className="text-xl mb-8 opacity-90">
-            Be part of transformative experiences that make a real difference in children's lives. 
-            Your participation helps us create lasting impact in our community.
+            Join us in discovering and nurturing hidden talents in children. Your support helps us provide
+            platforms for children to explore their potential and build confidence for their future.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
