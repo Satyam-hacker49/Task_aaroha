@@ -6,20 +6,22 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
-import { 
-  Code, 
-  Globe, 
-  Users, 
-  Lightbulb, 
-  Trophy, 
-  Calendar, 
-  MapPin, 
-  Mail, 
+import {
+  Code,
+  Globe,
+  Users,
+  Lightbulb,
+  Trophy,
+  Calendar,
+  MapPin,
+  Mail,
   Phone,
   CheckCircle,
   Star,
   Target,
-  Zap
+  Zap,
+  Heart,
+  BookOpen
 } from "lucide-react";
 
 export default function Index() {
