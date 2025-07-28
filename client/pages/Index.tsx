@@ -35,30 +35,30 @@ export default function Index() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <div className="text-center">
             <Badge className="mb-6 bg-gradient-to-r from-aaroha-blue to-aaroha-teal text-white px-4 py-2">
-              TECHNICAL EVENT 2025
+              EMPOWERING CHILDREN SINCE 2014
             </Badge>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-aaroha-navy mb-6">
               Welcome to <span className="bg-gradient-to-r from-aaroha-blue to-aaroha-teal bg-clip-text text-transparent">Aaroha</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              The official digital face of Aaroha. A platform that serves visitors to learn about our events, 
-              view highlights, and show interest or volunteer via a form.
+              A non-governmental organization based in Bhopal, Madhya Pradesh, dedicated to empowering
+              underprivileged children through education, healthcare, and social support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-gradient-to-r from-aaroha-blue to-aaroha-teal hover:from-aaroha-teal hover:to-aaroha-blue text-white px-8 py-4 text-lg"
               >
-                <Users className="mr-2 h-5 w-5" />
-                Join the Event
+                <Heart className="mr-2 h-5 w-5" />
+                Volunteer With Us
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
+              <Button
+                size="lg"
+                variant="outline"
                 className="border-aaroha-blue text-aaroha-blue hover:bg-aaroha-blue hover:text-white px-8 py-4 text-lg"
               >
-                <Calendar className="mr-2 h-5 w-5" />
-                View Schedule
+                <BookOpen className="mr-2 h-5 w-5" />
+                Our Programs
               </Button>
             </div>
           </div>
