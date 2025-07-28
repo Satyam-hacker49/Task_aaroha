@@ -71,82 +71,95 @@ export default function Index() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-aaroha-navy mb-4">About Aaroha</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Introducing the event and its purpose
+              Empowering underprivileged children through education and holistic development since 2014
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-aaroha-navy mb-6">What is Aaroha?</h3>
-              <div className="space-y-4 text-gray-600">
-                <div className="flex items-start space-x-3">
-                  <Target className="h-6 w-6 text-aaroha-blue mt-0.5 flex-shrink-0" />
-                  <p>Why Aaroha is organized? To showcase technical excellence and innovation in our community.</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Zap className="h-6 w-6 text-aaroha-teal mt-0.5 flex-shrink-0" />
-                  <p>What is its impact? Creating opportunities for students and professionals to connect, learn, and grow together.</p>
-                </div>
+
+          {/* Main Description */}
+          <div className="text-center mb-16">
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg leading-relaxed text-gray-600 mb-8">
+                <strong>Aaroha</strong> is a non-governmental organization based in <strong>Bhopal, Madhya Pradesh</strong>,
+                dedicated to the empowerment and holistic development of underprivileged children through education,
+                healthcare, and social support. Founded in 2014 and officially registered in 2017, our mission is to
+                ensure that no child is deprived of education due to lack of resources.
+              </p>
+            </div>
+          </div>
+
+          {/* Vision & Mission Grid */}
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div className="text-center">
+              <div className="w-20 h-20 bg-gradient-to-r from-aaroha-blue to-aaroha-teal rounded-full flex items-center justify-center mx-auto mb-6">
+                <Target className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-aaroha-navy mb-4">Our Vision</h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                To create a society where every child, regardless of their background, has access to quality education
+                and opportunities for personal growth, enabling them to break the cycle of poverty and contribute
+                meaningfully to their communities.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-20 h-20 bg-gradient-to-r from-aaroha-teal to-aaroha-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-aaroha-navy mb-4">Our Mission</h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                To provide comprehensive educational support, skill development programs, and mentorship to
+                underprivileged children in Bhopal, fostering their academic, personal, and social development
+                through innovative and sustainable initiatives.
+              </p>
+            </div>
+          </div>
+
+          {/* Core Values */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-aaroha-navy mb-8 text-center">Our Core Values</h3>
+            <div className="grid md:grid-cols-4 gap-6">
+              <div className="text-center p-6 bg-gradient-to-br from-aaroha-blue/5 to-aaroha-blue/10 rounded-lg hover:shadow-md transition-shadow">
+                <BookOpen className="h-12 w-12 text-aaroha-blue mx-auto mb-4" />
+                <h4 className="font-semibold text-aaroha-navy mb-2">Education First</h4>
+                <p className="text-sm text-gray-600">Quality education as the foundation for breaking the poverty cycle</p>
+              </div>
+              <div className="text-center p-6 bg-gradient-to-br from-aaroha-teal/5 to-aaroha-teal/10 rounded-lg hover:shadow-md transition-shadow">
+                <Users className="h-12 w-12 text-aaroha-teal mx-auto mb-4" />
+                <h4 className="font-semibold text-aaroha-navy mb-2">Community Driven</h4>
+                <p className="text-sm text-gray-600">Local volunteers and community involvement at every level</p>
+              </div>
+              <div className="text-center p-6 bg-gradient-to-br from-aaroha-blue/5 to-aaroha-blue/10 rounded-lg hover:shadow-md transition-shadow">
+                <Globe className="h-12 w-12 text-aaroha-blue mx-auto mb-4" />
+                <h4 className="font-semibold text-aaroha-navy mb-2">Sustainable Impact</h4>
+                <p className="text-sm text-gray-600">Long-term support and follow-up for lasting positive change</p>
+              </div>
+              <div className="text-center p-6 bg-gradient-to-br from-aaroha-teal/5 to-aaroha-teal/10 rounded-lg hover:shadow-md transition-shadow">
+                <Lightbulb className="h-12 w-12 text-aaroha-teal mx-auto mb-4" />
+                <h4 className="font-semibold text-aaroha-navy mb-2">Holistic Development</h4>
+                <p className="text-sm text-gray-600">Beyond academics - life skills, creativity, and personal growth</p>
               </div>
             </div>
-            
-            <div className="space-y-6">
-              <div className="prose prose-lg max-w-none text-gray-600">
-                <p className="text-lg leading-relaxed mb-6">
-                  <strong>Aaroha</strong> is a non-governmental organization based in <strong>Bhopal, Madhya Pradesh</strong>,
-                  dedicated to the empowerment and holistic development of underprivileged children through education,
-                  skill development, and community engagement programs.
-                </p>
+          </div>
 
-                <div className="grid md:grid-cols-2 gap-8 mt-8">
-                  <div>
-                    <h4 className="text-xl font-semibold text-aaroha-navy mb-4 flex items-center">
-                      <Target className="h-6 w-6 text-aaroha-blue mr-2" />
-                      Our Vision
-                    </h4>
-                    <p className="text-gray-600 leading-relaxed">
-                      To create a society where every child, regardless of their background, has access to quality education
-                      and opportunities for personal growth, enabling them to break the cycle of poverty and contribute
-                      meaningfully to their communities.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h4 className="text-xl font-semibold text-aaroha-navy mb-4 flex items-center">
-                      <Heart className="h-6 w-6 text-aaroha-teal mr-2" />
-                      Our Mission
-                    </h4>
-                    <p className="text-gray-600 leading-relaxed">
-                      To provide comprehensive educational support, skill development programs, and mentorship to
-                      underprivileged children in Bhopal, fostering their academic, personal, and social development
-                      through innovative and sustainable initiatives.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-8">
-                  <h4 className="text-xl font-semibold text-aaroha-navy mb-4 flex items-center">
-                    <Users className="h-6 w-6 text-aaroha-blue mr-2" />
-                    What Makes Us Different
-                  </h4>
-                  <div className="grid md:grid-cols-3 gap-6">
-                    <div className="text-center p-4 bg-aaroha-blue/5 rounded-lg">
-                      <BookOpen className="h-8 w-8 text-aaroha-blue mx-auto mb-2" />
-                      <p className="font-medium text-aaroha-navy">Holistic Education</p>
-                      <p className="text-sm text-gray-600 mt-1">Beyond academics - life skills, creativity, and personal growth</p>
-                    </div>
-                    <div className="text-center p-4 bg-aaroha-teal/5 rounded-lg">
-                      <Lightbulb className="h-8 w-8 text-aaroha-teal mx-auto mb-2" />
-                      <p className="font-medium text-aaroha-navy">Community-Driven</p>
-                      <p className="text-sm text-gray-600 mt-1">Local volunteers and community involvement at the core</p>
-                    </div>
-                    <div className="text-center p-4 bg-aaroha-blue/5 rounded-lg">
-                      <Globe className="h-8 w-8 text-aaroha-blue mx-auto mb-2" />
-                      <p className="font-medium text-aaroha-navy">Sustainable Impact</p>
-                      <p className="text-sm text-gray-600 mt-1">Long-term support and follow-up for lasting change</p>
-                    </div>
-                  </div>
-                </div>
+          {/* Key Statistics */}
+          <div className="bg-gradient-to-r from-aaroha-light to-white rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-aaroha-navy mb-8 text-center">Aaroha at a Glance</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-aaroha-blue mb-2">2014</div>
+                <p className="text-gray-600 text-sm">Founded</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-aaroha-teal mb-2">500+</div>
+                <p className="text-gray-600 text-sm">Children Empowered</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-aaroha-blue mb-2">4</div>
+                <p className="text-gray-600 text-sm">Core Programs</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-aaroha-teal mb-2">10+</div>
+                <p className="text-gray-600 text-sm">Years of Service</p>
               </div>
             </div>
           </div>
