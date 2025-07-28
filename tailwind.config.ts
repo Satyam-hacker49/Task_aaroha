@@ -57,6 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        aaroha: {
+          blue: "hsl(var(--aaroha-blue))",
+          teal: "hsl(var(--aaroha-teal))",
+          navy: "hsl(var(--aaroha-navy))",
+          light: "hsl(var(--aaroha-light))",
+          dark: "hsl(var(--aaroha-dark))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
