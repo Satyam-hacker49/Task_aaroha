@@ -239,10 +239,9 @@ export default function About() {
               <HandHeart className="mr-2 h-5 w-5" />
               Become a Volunteer
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-aaroha-navy px-8 py-4"
+            <Button
+              size="lg"
+              className="bg-white text-aaroha-navy hover:bg-gray-100 hover:text-aaroha-navy px-8 py-4"
             >
               <Heart className="mr-2 h-5 w-5" />
               Donate Now
