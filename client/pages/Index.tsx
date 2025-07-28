@@ -153,62 +153,79 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Event Highlights Section */}
+      {/* Our Programs Section */}
       <section className="py-20 bg-gradient-to-r from-aaroha-light to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-aaroha-navy mb-4">Event Highlights</h2>
-            <p className="text-xl text-gray-600">Showcasing what happens in Aaroha</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-aaroha-navy mb-4">Our Programs</h2>
+            <p className="text-xl text-gray-600">Comprehensive initiatives for holistic child development</p>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
-                <Code className="h-12 w-12 text-aaroha-blue mb-4" />
-                <CardTitle className="text-aaroha-navy">Technical Competitions</CardTitle>
+                <BookOpen className="h-12 w-12 text-aaroha-blue mb-4" />
+                <CardTitle className="text-aaroha-navy">Project Akshar</CardTitle>
                 <CardDescription>
-                  Coding contests, hackathons, and algorithm challenges
+                  Daily learning sessions providing multidisciplinary education since 2014
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Web Development</li>
-                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Mobile Apps</li>
-                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />AI/ML Projects</li>
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Monday to Friday sessions</li>
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Multiple subjects covered</li>
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Skill development focus</li>
                 </ul>
               </CardContent>
             </Card>
-            
+
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
-                <Users className="h-12 w-12 text-aaroha-teal mb-4" />
-                <CardTitle className="text-aaroha-navy">Workshops</CardTitle>
+                <Star className="h-12 w-12 text-aaroha-teal mb-4" />
+                <CardTitle className="text-aaroha-navy">Project Anand</CardTitle>
                 <CardDescription>
-                  Hands-on learning sessions with industry experts
+                  Educational trips and engaging programs making learning fun and interactive
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Latest Technologies</li>
-                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Best Practices</li>
-                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Career Guidance</li>
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Science exhibitions</li>
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Annual programs</li>
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Educational trips</li>
                 </ul>
               </CardContent>
             </Card>
-            
+
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
-                <Trophy className="h-12 w-12 text-aaroha-blue mb-4" />
-                <CardTitle className="text-aaroha-navy">Networking</CardTitle>
+                <Heart className="h-12 w-12 text-aaroha-blue mb-4" />
+                <CardTitle className="text-aaroha-navy">Project Aahar</CardTitle>
                 <CardDescription>
-                  Connect with professionals and peers in the industry
+                  Nutritious meal program combating hunger and malnutrition in slum areas
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Industry Leaders</li>
-                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Startup Founders</li>
-                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Fellow Students</li>
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Daily nutritious meals</li>
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Volunteer-prepared food</li>
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Fighting malnutrition</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <Trophy className="h-12 w-12 text-aaroha-teal mb-4" />
+                <CardTitle className="text-aaroha-navy">Project Pathshala</CardTitle>
+                <CardDescription>
+                  School admission support with full educational expense coverage
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Quality school admissions</li>
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Complete expense coverage</li>
+                  <li className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-2" />Books & uniforms provided</li>
                 </ul>
               </CardContent>
             </Card>
