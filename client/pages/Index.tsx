@@ -386,17 +386,17 @@ export default function Index() {
                 <span className="text-2xl font-bold">Aaroha</span>
               </div>
               <p className="text-white/80">
-                The official digital platform for Aaroha technical events and community engagement.
+                A non-governmental organization empowering underprivileged children through education, healthcare, and social support since 2014.
               </p>
             </div>
             
             <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <h3 className="text-lg font-semibold mb-4">Our Programs</h3>
               <ul className="space-y-2 text-white/80">
-                <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
-                <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
-                <li><a href="/events" className="hover:text-white transition-colors">Events</a></li>
-                <li><a href="/recruitment" className="hover:text-white transition-colors">Recruitment</a></li>
+                <li><a href="/" className="hover:text-white transition-colors">Project Akshar</a></li>
+                <li><a href="/about" className="hover:text-white transition-colors">Project Anand</a></li>
+                <li><a href="/events" className="hover:text-white transition-colors">Project Aahar</a></li>
+                <li><a href="/" className="hover:text-white transition-colors">Project Pathshala</a></li>
               </ul>
             </div>
             
@@ -405,22 +405,22 @@ export default function Index() {
               <div className="space-y-2 text-white/80">
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4" />
-                  <span>contact@aaroha.event</span>
+                  <span>info@aaroha.org.in</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4" />
-                  <span>+91 XXXXX XXXXX</span>
+                  <span>Contact via website</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4" />
-                  <span>Event Location, City</span>
+                  <span>Bhopal, Madhya Pradesh</span>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-            <p>&copy; 2025 Aaroha. All rights reserved. Built with modern web technologies.</p>
+            <p>&copy; 2025 Aaroha NGO. All rights reserved. Empowering children through education since 2014.</p>
           </div>
         </div>
       </footer>
