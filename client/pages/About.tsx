@@ -97,70 +97,83 @@ export default function About() {
         </div>
       </section>
 
-      {/* Project Anand */}
+      {/* Project Aasha */}
       <section className="py-20 bg-gradient-to-r from-aaroha-light to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-aaroha-navy mb-4">Project Anand</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-aaroha-navy mb-4">Project Aasha</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our flagship initiative bringing joy and education to underprivileged children
+              Our flagship initiative providing hope and opportunities for children to explore and showcase their talents
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow duration-300 border-2 border-aaroha-blue/20">
-              <CardHeader>
-                <Lightbulb className="h-12 w-12 text-aaroha-blue mb-4" />
-                <CardTitle className="text-aaroha-navy">Educational Activities</CardTitle>
-                <CardDescription>
-                  Engaging learning experiences designed to make education fun and accessible
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Interactive learning sessions</li>
-                  <li>• Skill development workshops</li>
-                  <li>• Creative arts and crafts</li>
-                  <li>• Communication skills training</li>
-                </ul>
-              </CardContent>
-            </Card>
-            
-            <Card className="hover:shadow-lg transition-shadow duration-300 border-2 border-aaroha-teal/20">
-              <CardHeader>
-                <HandHeart className="h-12 w-12 text-aaroha-teal mb-4" />
-                <CardTitle className="text-aaroha-navy">Community Support</CardTitle>
-                <CardDescription>
-                  Building strong support networks for children and their families
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Family engagement programs</li>
-                  <li>• Community awareness initiatives</li>
-                  <li>• Volunteer training programs</li>
-                  <li>• Resource sharing networks</li>
-                </ul>
-              </CardContent>
-            </Card>
-            
-            <Card className="hover:shadow-lg transition-shadow duration-300 border-2 border-aaroha-blue/20">
-              <CardHeader>
-                <Globe className="h-12 w-12 text-aaroha-blue mb-4" />
-                <CardTitle className="text-aaroha-navy">Impact & Growth</CardTitle>
-                <CardDescription>
-                  Measuring success through the growth and development of our beneficiaries
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Regular progress assessments</li>
-                  <li>• Success story documentation</li>
-                  <li>• Long-term follow-up support</li>
-                  <li>• Impact measurement tools</li>
-                </ul>
-              </CardContent>
-            </Card>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+            <div>
+              <h3 className="text-2xl font-bold text-aaroha-navy mb-6">Why Project Aasha is Organized</h3>
+              <div className="space-y-4 text-gray-600">
+                <div className="flex items-start space-x-3">
+                  <Target className="h-6 w-6 text-aaroha-blue mt-0.5 flex-shrink-0" />
+                  <p><strong>Talent Discovery:</strong> Many underprivileged children have hidden talents that go unrecognized due to lack of opportunities and platforms to showcase their abilities.</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Heart className="h-6 w-6 text-aaroha-teal mt-0.5 flex-shrink-0" />
+                  <p><strong>Confidence Building:</strong> Children from disadvantaged backgrounds often lack self-confidence and belief in their own capabilities.</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Users className="h-6 w-6 text-aaroha-blue mt-0.5 flex-shrink-0" />
+                  <p><strong>Holistic Development:</strong> Beyond academic learning, children need emotional, social, and creative development opportunities.</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Lightbulb className="h-6 w-6 text-aaroha-teal mt-0.5 flex-shrink-0" />
+                  <p><strong>Breaking Barriers:</strong> Creating pathways for children to overcome socio-economic barriers through skill development and self-expression.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-aaroha-navy mb-6">Impact of Project Aasha</h3>
+              <div className="space-y-4">
+                <Card className="border-2 border-aaroha-blue/20 hover:border-aaroha-blue/40 transition-colors">
+                  <CardContent className="p-4">
+                    <div className="flex items-center space-x-3 mb-2">
+                      <Award className="h-6 w-6 text-aaroha-blue" />
+                      <span className="font-semibold text-aaroha-navy">Enhanced Self-Esteem</span>
+                    </div>
+                    <p className="text-sm text-gray-600">Children develop confidence in their abilities and gain belief in their potential</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 border-aaroha-teal/20 hover:border-aaroha-teal/40 transition-colors">
+                  <CardContent className="p-4">
+                    <div className="flex items-center space-x-3 mb-2">
+                      <Star className="h-6 w-6 text-aaroha-teal" />
+                      <span className="font-semibold text-aaroha-navy">Talent Recognition</span>
+                    </div>
+                    <p className="text-sm text-gray-600">Hidden talents are discovered and nurtured through various activities and programs</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 border-aaroha-blue/20 hover:border-aaroha-blue/40 transition-colors">
+                  <CardContent className="p-4">
+                    <div className="flex items-center space-x-3 mb-2">
+                      <Globe className="h-6 w-6 text-aaroha-blue" />
+                      <span className="font-semibold text-aaroha-navy">Future Opportunities</span>
+                    </div>
+                    <p className="text-sm text-gray-600">Creates pathways for better education and career prospects</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 border-aaroha-teal/20 hover:border-aaroha-teal/40 transition-colors">
+                  <CardContent className="p-4">
+                    <div className="flex items-center space-x-3 mb-2">
+                      <HandHeart className="h-6 w-6 text-aaroha-teal" />
+                      <span className="font-semibold text-aaroha-navy">Community Impact</span>
+                    </div>
+                    <p className="text-sm text-gray-600">Families and communities benefit from children's growth and development</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
